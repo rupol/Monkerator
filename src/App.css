@@ -276,12 +276,12 @@ button {
 
 button:hover {
   top       : 2px;
-  box-shadow: 0 4px grey;
+  box-shadow: 0 4px #5a5a5a;
 }
 
 button:active {
   top       : 6px;
-  box-shadow: 0 0 grey;
+  box-shadow: 0 0 #5a5a5a;
 }
 
 .episode-details {
