@@ -36,7 +36,7 @@ const Episode = props => {
       <div className="episode-details">
         <h2>{props.monkEpisode.name}</h2>
         <h3>Season {props.monkEpisode.season_number}</h3>
-        <h3>Air date: {props.monkEpisode.air_date}</h3>
+        <h3>Air Date: {props.monkEpisode.air_date}</h3>
         <p>{props.monkEpisode.overview}</p>
       </div>
     </div>
