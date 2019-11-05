@@ -34,10 +34,43 @@ const Episode = props => {
         </div>
       </div>
       <div className="episode-details">
-        <h2>{props.monkEpisode.name}</h2>
-        <h3>Season {props.monkEpisode.season_number}</h3>
-        <h3>Air Date: {props.monkEpisode.air_date}</h3>
-        <p>{props.monkEpisode.overview}</p>
+        <h2 className="episode-title">{props.monkEpisode.name}</h2>
+        <div className="flex-container">
+          <h3>(CC)&mdash;Comedy</h3>
+          <h3>Season {props.monkEpisode.season_number}</h3>
+          <h3>Air Date: {props.monkEpisode.air_date}</h3>
+        </div>
+        <p className="episode-overview">{props.monkEpisode.overview}</p>
+        <div className="channels">
+          <a
+            className="channel"
+            href="https://www.amazon.com/gp/video/detail/B002Z1NE14/ref=atv_dl_rdr"
+            target="_blank"
+          >
+            AMZ
+          </a>
+          <a
+            className="channel"
+            href="https://www.youtube.com/playlist?list=ELZdpAo71s0rg"
+            target="_blank"
+          >
+            YT
+          </a>
+          <a
+            className="channel"
+            href="https://itunes.apple.com/us/tv-season/monk-the-complete-series/id1438576775"
+            target="_blank"
+          >
+            APL
+          </a>
+          <a
+            className="channel"
+            href="https://play.google.com/store/tv/show?id=fIoQgV-kwjg&cdid=tvseason-yp_38Pn2xi0&gdid=tvepisode-p2N5C5C7iJ0"
+            target="_blank"
+          >
+            GGL
+          </a>
+        </div>
       </div>
     </div>
   );

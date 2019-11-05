@@ -157,7 +157,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin   : 1rem 1% 2rem;
 }
 
@@ -171,8 +171,14 @@ p {
   margin   : 1rem 1%;
 }
 
+.flex-container {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
 .container {
-  margin   : 200px auto 0;
+  margin   : 123px auto 0;
   max-width: 1200px;
 }
 
@@ -182,17 +188,17 @@ p {
   align-items     : center;
   width           : 90%;
   height          : 55vw;
-  background-color: #FFBD4D;
+  background-color: #8a8c8a;
   margin          : 50px auto;
   border-radius   : 5px;
 }
 
 .antenna {
   position               : absolute;
-  width                  : 100px;
-  height                 : 18px;
+  width                  : 75px;
+  height                 : 13px;
   background             : #222;
-  top                    : 312px;
+  top                    : 240px;
   left                   : 50%;
   border-top-left-radius : 50%;
   border-top-right-radius: 50%;
@@ -202,9 +208,9 @@ p {
   content                : " ";
   position               : absolute;
   bottom                 : 8px;
-  left                   : 10px;
-  width                  : 9px;
-  height                 : 169px;
+  left                   : 5px;
+  width                  : 7px;
+  height                 : 110px;
   background-color       : #444;
   background-image       : linear-gradient(rgba(255, 255, 255, 0.1), transparent);
   transform              : rotate(-20deg);
@@ -217,9 +223,9 @@ p {
   content                : " ";
   position               : absolute;
   bottom                 : 8px;
-  left                   : 85px;
-  width                  : 9px;
-  height                 : 169px;
+  left                   : 66px;
+  width                  : 7px;
+  height                 : 110px;
   background             : #444;
   background-image       : linear-gradient(rgba(255, 255, 255, 0.1), transparent);
   transform              : rotate(20deg);
@@ -242,10 +248,9 @@ p {
 }
 
 .tv-screen img {
-  max-width    : 100%;
-  padding      : 0;
-  border-radius: 0;
-
+  width        : 100%;
+  padding      : 20px;
+  border-radius: 30px;
 }
 
 .tv-controls {
@@ -260,13 +265,13 @@ button {
   color           : black;
   font-size       : .9rem;
   background-color: white;
-  width           : 50px;
-  height          : 50px;
+  width           : 60px;
+  height          : 60px;
   border-radius   : 50%;
-  box-shadow      : 0 6px grey;
+  box-shadow      : 0 6px #5a5a5a;
   transition      : none;
   position        : relative;
-  margin          : 2rem;
+  margin          : 2rem 2rem 2rem 0;
 }
 
 button:hover {
@@ -280,13 +285,44 @@ button:active {
 }
 
 .episode-details {
-  width : 90%;
-  margin: 0 auto;
+  width           : 90%;
+  margin          : 2rem auto;
+  padding         : 1rem;
+  background-color: #EAD9C7;
+}
+
+.episode-title {
+  text-transform: uppercase;
+}
+
+.episode-overview {
+  text-align: justify;
+}
+
+.channels {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.channel {
+  margin          : 10px 4px;
+  padding         : 2px 4px;
+  background-color: #000;
+  border-radius   : 8px;
+  text-decoration : none;
+  color           : #EAD9C7;
+  font-size       : 2rem;
+  font-weight     : 600;
 }
 
 @media (min-width: 700px) {
   .subtitle {
     font-size: 3rem;
+  }
+
+  .container {
+    margin: 200px auto 0;
   }
 
   .antenna {
@@ -305,13 +341,6 @@ button:active {
     left  : 150px;
     width : 12px;
     height: 180px;
-  }
-
-  .tv-screen img {
-    max-width    : 100%;
-    padding      : 20px;
-    border-radius: 30px;
-
   }
 
   button {
