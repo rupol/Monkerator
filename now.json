@@ -1,5 +1,7 @@
 {
-  "env": {
-    "REACT_APP_API_KEY": "@react_app_api_key"
+  "build": {
+    "env": {
+      "REACT_APP_API_KEY": "@react_app_api_key"
+    }
   }
 }
