@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin        : 0;
+  padding       : 0;
+  border        : 0;
+  font-size     : 100%;
+  font          : inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing : 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size       : 62.5%;
+  text-align      : center;
+  font-family     : 'Quicksand', sans-serif;
+  background-color: #90D2D0;
+}
+
+h1 {
+  font-size  : 8rem;
+  font-family: 'Sirin Stencil', cursive;
+  margin     : 1rem 1% 2rem;
+}
+
+.subtitle {
+  font-size  : 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 4rem;
+  margin   : 1rem 1% 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin   : 1rem 1%;
+}
+
+p {
+  font-size: 2rem;
+  margin   : 1rem 1%;
+}
+
+.container {
+  margin   : 125px auto 0;
+  max-width: 1200px;
+}
+
+.tv {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  width           : 90%;
+  height          : 55vw;
+  background-color: #FFBD4D;
+  margin          : 50px auto;
+  border-radius   : 5px;
+}
+
+.antenna {
+  position               : absolute;
+  width                  : 100px;
+  height                 : 18px;
+  background             : #222;
+  top                    : 237px;
+  left                   : 50%;
+  border-top-left-radius : 50%;
+  border-top-right-radius: 50%;
+}
+
+.antenna:before {
+  content                : " ";
+  position               : absolute;
+  bottom                 : 8px;
+  left                   : 10px;
+  width                  : 9px;
+  height                 : 169px;
+  background-color       : #444;
+  background-image       : linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+  transform              : rotate(-20deg);
+  border-top-left-radius : 40%;
+  border-top-right-radius: 40%;
+  z-index                : -1;
+}
+
+.antenna:after {
+  content                : " ";
+  position               : absolute;
+  bottom                 : 8px;
+  left                   : 85px;
+  width                  : 9px;
+  height                 : 169px;
+  background             : #444;
+  background-image       : linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+  transform              : rotate(20deg);
+  border-top-left-radius : 40%;
+  border-top-right-radius: 40%;
+  z-index                : -1;
+}
+
+.tv-screen {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  flex            : 4;
+  height          : 42vw;
+  margin          : 20px 4% 15px;
+  background-color: #222;
+  color           : black;
+  border-radius   : 10px;
+  font-size       : 2rem;
+}
+
+.tv-screen img {
+  max-width    : 100%;
+  padding      : 0;
+  border-radius: 0;
+
+}
+
+.tv-controls {
+  flex: 1
+}
+
+button {
+  border          : none;
+  outline         : none;
+  cursor          : pointer;
+  padding         : 10px;
+  color           : black;
+  font-size       : .9rem;
+  background-color: white;
+  width           : 50px;
+  height          : 50px;
+  border-radius   : 50%;
+  box-shadow      : 0 6px grey;
+  transition      : none;
+  position        : relative;
+  margin          : 2rem;
+}
+
+button:hover {
+  top       : 2px;
+  box-shadow: 0 4px grey;
+}
+
+button:active {
+  top       : 6px;
+  box-shadow: 0 0 grey;
+}
+
+.episode-details {
+  width : 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .antenna {
+    width : 200px;
+    height: 20px;
+    top   : 245px;
+  }
+
+  .antenna:before {
+    left  : 40px;
+    width : 12px;
+    height: 250px;
+  }
+
+  .antenna:after {
+    left  : 150px;
+    width : 12px;
+    height: 250px;
+  }
+
+  .tv-screen img {
+    max-width    : 100%;
+    padding      : 20px;
+    border-radius: 30px;
+
+  }
+
+  button {
+    width    : 90px;
+    height   : 90px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .tv {
+    width : 1100px;
+    height: 685px;
+  }
+
+  .tv-screen {
+    height: 500px;
+  }
+}
